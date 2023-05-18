@@ -1,0 +1,737 @@
+/* Default positioning */
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+/* Header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90px;
+  background-color: #17245A;
+  box-shadow:  0px 2px 10px black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: height 0.3s ease;
+}
+
+header.shrink{
+  height: 4rem;
+}
+
+.h1 {
+  margin: 0;
+  padding: 1rem;
+  flex: 1;
+  list-style: none;
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav a {
+  color: #fff;
+  font-weight: bolder;
+  font-family: Poppins, MS;
+  text-decoration: none;
+}
+
+/* Main */
+main {
+  margin: 20px;
+  padding-bottom: 10%;
+}
+
+/* Square */
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: #EE6F57;
+  margin: 20px auto;
+}
+
+#footer{
+  background-color: #17245A;
+  box-shadow:  -.1rem 0rem .8rem .1rem black;
+  color: #fff;
+  position: relative;
+  width: 100%;
+  margin-top: -100px;
+  clear: both;
+  color: white;
+  text-align: center;
+  padding: 56px 0rem 40px;
+}
+
+.explore{
+  margin-left: 65rem;
+  margin-top: -2rem;
+  text-align: left;
+}
+
+.explore ul li {
+  list-style: none;
+  margin: 5px;
+}
+
+.explore ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.get-in-touch{
+  margin-top: -8rem;
+  margin-left: 77rem;
+  text-align: left;
+}
+
+.get-in-touch ul li {
+  list-style: none;
+  margin: 3px;
+}
+
+.get-in-touch ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.reserve{
+  margin-top: 4rem;
+  margin-bottom: -4rem;
+  margin-left: 75rem;
+  color: white;
+  font-weight: bolder;
+}
+
+.mini-square{
+  display: flex;
+  width: 8rem;
+  height: 10rem;
+  margin-left: 8rem;
+  margin-top: -7rem;
+  background-color: black;
+}
+
+.mini-square2{
+  display: flex;
+  background-color: #17245A ;
+  border: solid white;
+  height: 8rem;
+  width:8rem;
+  margin-left: 5rem;
+  margin-top: -9rem;
+}
+
+.busNameFooter{
+   font-family: verdana;
+  font-weight: bolder;
+  font-size: 1.4em;
+  margin-left: 1rem;
+  margin-top: 1.3rem;
+  color: white;
+  background-color: #17245A;
+  text-align: right;
+}
+
+.line{
+  height: 14rem;
+  width: .1rem;
+  margin-top: -16rem;
+  margin-left: 25rem;
+  background-color: white;
+}
+
+.line2{
+  height: 14rem;
+  width: .1rem;
+  margin-top: -14rem;
+  margin-left: 62rem;
+  background-color: white;
+}
+
+
+.frontPage{
+  display: flex;
+  background-repeat: no-repeat;
+  margin-top: 5rem;
+  width: 93.7rem;
+  margin-left: -1.3rem;
+
+}
+
+.H1{
+  font-size: 50px;
+  font-weight: bolder;
+  font-family: Arial Black;
+  color: #F9F871;
+  text-shadow: 2px 2px 4px #000000;
+  text-align: center;
+  margin-top: -17rem;
+}
+
+.H1Desc{
+  font-size: 25px;
+  font-style: italic;
+  font-weight: bolder;
+  font-family: Trebuchet MS;
+  color: #5AECC1;
+  text-shadow: 2px 2px 4px black;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 20rem;
+}
+
+.Events{
+  text-align: center;
+  color: #17245A;
+  font-size: 24px;
+  font-family: Charge Vector Black;
+  font-weight: bolder;
+  margin-top: -11rem;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.FirmDesc{
+  text-align: center;
+  color: gray;
+  font-size: 18px;
+  font-family: Trebuchet MS;
+  margin-top: 2rem;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.debut{
+  margin-top: 4rem;
+  height: 22rem;
+  width: 27rem;
+  box-shadow: 2px 2px 5px black;
+}
+
+.wedding{
+  margin-top: -30rem;
+  margin-left: 5.3rem;
+  margin-right: 4.8rem;
+  height: 22rem;
+  width: 27rem;
+  box-shadow: 2px 2px 5px black;
+}
+
+.corporate{
+  margin-top: -20rem;
+  margin-right: -10rem;
+  height: 22rem;
+  width: 27rem;
+  box-shadow: 2px 2px 5px black;
+}
+
+.privateParty{
+  margin-top: 4rem;
+  margin-left: 12rem;
+  height: 22rem;
+  width: 27rem;
+  box-shadow: 2px 2px 5px black;
+}
+
+.kidsParty{
+   margin-top: 4rem;
+  margin-left: 12rem;
+  height: 22rem;
+  width: 27rem;
+  box-shadow: 2px 2px 5px black;
+}
+
+.labelDebut {
+  border-radius: 1rem;
+  background-color: #17245A;
+  box-shadow: 2px 4px px gray ;
+  color: #FFB55A;
+  font-weight: bolder;
+  font-size: 30px;
+  font-family: Tahoma;
+  margin-top: .1rem;
+  margin-left: -.1rem;
+  width: 26rem;
+  text-align: center;
+  padding: .5rem;
+}
+
+.labelWedding {
+  border-radius: 1rem;
+  background-color: #17245A;
+  box-shadow: 2px 4px px gray ;
+  color: #FFB55A;
+  font-weight: bolder;
+  font-size: 30px;
+  font-family: Tahoma;
+  margin-top: -3.3rem;
+  margin-left: 32.4rem;
+  width: 26rem;
+  text-align: center;
+  padding: .5rem;
+}
+
+.labelCorporate{
+  border-radius: 1rem;
+  background-color: #17245A;
+  box-shadow: 2px 4px px gray ;
+  color: #FFB55A;
+  font-weight: bolder;
+  font-size: 30px;
+  font-family: Tahoma;
+  margin-top: -3.3rem;
+  margin-left: 64.5rem;
+  width: 26rem;
+  text-align: center;
+  padding: .5rem;
+}
+
+.labelPrivateParty {
+  border-radius: 1rem;
+  background-color: #17245A;
+  box-shadow: 2px 4px px gray ;
+  color: #FFB55A;
+  font-weight: bolder;
+  font-size: 30px;
+  font-family: Tahoma;
+  margin-top: .1rem;
+  margin-left: 12rem;
+  width: 26rem;
+  text-align: center;
+  padding: .5rem;
+  margin-bottom: 5rem;
+}
+
+.labelKidsParty {
+  border-radius: 1rem;
+  background-color: #17245A;
+  box-shadow: 2px 4px px gray ;
+  color: #FFB55A;
+  font-weight: bolder;
+  font-size: 30px;
+  font-family: Tahoma;
+  margin-top: -8.3rem;
+  margin-left: 51.4rem;
+  width: 26rem;
+  text-align: center;
+  padding: .5rem;
+  margin-bottom: 5rem;
+}
+
+.PPE{
+  margin-bottom: 15rem;
+}
+
+.PPEdesc{
+  text-align: center;
+  color: black;
+  font-size: 1.5em;
+  margin-top: 4rem;
+  margin-left: -48rem;
+  font-family: Gill Sans, sans-serif;
+  letter-spacing: .1rem;
+  word-spacing: .1rem;
+
+}
+
+.ppeImg{
+  height: 35rem;
+  border-radius: 1.5rem;
+  box-shadow: 4px 7px 5px black;
+  width: 45rem;
+  margin-left: 45rem;
+  margin-top: -29rem;
+  margin-bottom: 3rem;
+
+}
+
+.Title{
+  text-align: left;
+  font-family: Charge Vector Black;
+  font-size: 40px;
+  margin-top: -7rem;
+  color: #550815;
+}
+
+.TestimonialContainer{
+  margin-top: 4rem;
+}
+
+.TestimonialTitle{
+  color: #007D59;
+  text-align: center;
+  font-size: 3em;
+  font-family: Charge Vector Black;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.TestimonialsDesc{
+  margin-top: 2rem;
+  margin-bottom: -2rem;
+  text-align: center;
+  font-size: 1.3em;
+  font-family: Trebuchet MS;
+  color: gray;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.testimonials{
+  display: none;
+}
+
+.bgTestimonial1{
+  border-radius: 1.5rem;
+  box-shadow: 4px 7px 10px gray;
+  margin-top: 4rem;
+  width: 75rem;
+  margin-left: 8rem;
+  margin-bottom: 4rem;
+}
+
+.feedBack1{
+  margin-top: -23rem;
+  color: whitesmoke;
+  font-size: 3em;
+  text-align: center;
+  text-shadow: 2px 2px 4px #000000;
+  font-weight: bolder;
+  font-family: Candara;
+  margin-bottom: 9.5rem;
+}
+
+.bgTestimonial2{
+  border-radius: 1.5rem;
+  box-shadow: 4px 7px 10px gray;
+  margin-top: 4rem;
+  width: 75rem;
+  height: 32.4rem;
+  margin-left: 8rem;
+  margin-bottom: 4rem;
+}
+
+.feedBack2{
+  margin-top: -26rem;
+  color: whitesmoke;
+  font-size: 2em;
+  text-align: center;
+  text-shadow: 2px 2px 4px #000000;
+  font-weight: bolder;
+  font-family: Candara;
+  word-wrap: break-word;
+  padding-left: 10rem;
+  padding-right: 10rem;
+  margin-bottom: 124px;
+}
+
+.bgTestimonial3{
+  border-radius: 1.5rem;
+  box-shadow: 4px 7px 10px gray;
+  margin-top: 4rem;
+  width: 74.8rem;
+  height: 32.5rem;
+  margin-left: 8rem;
+  margin-bottom: 4rem;
+}
+
+.feedBack3{
+  margin-top: -24rem;
+  color: whitesmoke;
+  font-size: 2em;
+  text-align: center;
+  text-shadow: 2px 2px 4px #000000;
+  font-weight: bolder;
+  font-family: Candara;
+  word-wrap: break-word;
+  padding-left: 10rem;
+  padding-right: 10rem;
+  margin-bottom: 168px;
+}
+
+
+.EventStyle{
+  margin-top: -15rem;
+}
+
+.StyleTitle{
+  margin-top: 6rem;
+  color: #550815;
+  font-size: 2.5em;
+  font-family: Charge Vector Black;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.StyleDesc{
+  margin-top: 2rem;
+  text-align: center;
+  font-family: Trebuchet MS;
+  font-size: 1.4em;
+  font-weight: bolder;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.Rustic{
+  margin-top: 25rem;
+  margin-left: .3rem;
+}
+
+.rustic1{
+  height: 20rem;
+  width: 30rem;
+}
+
+.rustic2{
+  height: 20rem;
+  width: 30rem;
+}
+
+.rustic3{
+  height: 20rem;
+  width: 30rem;
+}
+
+.Glamour{
+  margin-top: 10rem;
+  margin-left: .1rem;
+}
+
+.glamour1{
+  height: 20rem;
+  width: 30rem;
+}
+
+.glamour2{
+  height: 20rem;
+  width: 30rem;
+}
+
+.glamour3{
+  height: 20rem;
+  width: 30rem;
+}
+
+.GardenSpring{
+  margin-top: 9.5rem;
+  margin-left: .1rem;
+}
+
+.garden1{
+  height: 20rem;
+  width: 30rem;
+}
+
+.garden2{
+  height: 20rem;
+  width: 30rem;
+}
+
+.garden3{
+  height: 20rem;
+  width: 30rem;
+}
+
+.SeeMoreStyle{
+  background-color: whitesmoke;
+  margin-top: 3rem;
+  margin-left: 41rem;
+  padding: .1rem;
+  height: 3rem;
+  width: 10rem;
+  border-radius: .5rem;
+  border: solid black .2rem;
+  box-shadow: 1px 1px 5px gray;
+  color: black;
+  font-size: 1.5em;
+  font-weight: bolder;
+  font-family: calibri;
+}
+
+button.SeeMoreStyle:hover {
+  background-color: #E2E2E2;
+}
+
+.Style2{
+  text-align: center;
+  font-family: Arial Black;
+  font-size: 4em;
+  font-weight: bolder;
+  margin-top: 4rem;
+  margin-bottom: -4.5rem;
+  color: #004F64;
+  text-shadow: 1px 1px 4px gray;
+  letter-spacing: 1rem;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.Style1{
+  text-align: center;
+  font-family: Arial Black;
+  font-size: 4em;
+  font-weight: bolder;
+  margin-top: 23rem;
+  margin-bottom: -22rem;
+  color: #004F64;
+  text-shadow: 1px 1px 4px gray;
+  letter-spacing: 1rem;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.Style3{
+  text-align: center;
+  font-family: Arial Black;
+  font-size: 4em;
+  font-weight: bolder;
+  margin-top: 4rem;
+  margin-bottom: -5rem;
+  color: #004F64;
+  text-shadow: 1px 1px 4px gray;
+  letter-spacing: 1rem;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.Reserve{
+  height: 25rem;
+  width: 93.7rem;
+  background-color: #F9F871;
+  margin-top: 7rem;
+  margin-left: -1.3rem;
+  margin-bottom: -5rem;
+}
+
+.plan{
+  text-align: center;
+  color: black;
+  padding-top: 4rem;
+  font-size: 1.5em;
+  font-weight: bold;
+  font-family: Poppins, sans-serif;
+}
+
+.work{
+  text-align: center;
+  color: black;
+  padding-top: 3rem;
+  font-size: 2.4em;
+  font-weight: bold;
+  font-family: Arial Black;
+}
+
+.rsvp{
+  text-align: center;
+  color: black;
+  padding-top: 2rem;
+  font-size: 1.2em;
+  font-weight: bold;
+  font-family: Poppins, sans-serif;
+}
+
+.ReserveBtn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background: white;
+  font-family: "Montserrat", sans-serif;
+  box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  border: none;
+  margin-left: 39rem;
+  margin-top: 2rem;
+}
+
+button.ReserveBtn:after {
+  content: " ";
+  width: 0%;
+  height: 100%;
+  background: #8C3C3F;
+  position: absolute;
+  transition: all 0.4s ease-in-out;
+  right: 0;
+}
+
+button.ReserveBtn:hover::after {
+  right: auto;
+  left: 0;
+  width: 100%;
+}
+
+button span {
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  padding: 18px 25px;
+  color: black;
+  font-size: 1.125em;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  z-index: 20;
+  transition: all 0.3s ease-in-out;
+}
+
+button.ReserveBtn:hover span {
+  color: white;
+  animation: scaleUp 0.3s ease-in-out;
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(1);
+ }
+
+  50% {
+    transform: scale(0.95);
+}
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.Home{
+  color: #EE7863;
+}
+
+.profile{
+  width: 2rem;
+  height: 2rem;
+}
+
+.eventLink{
+  text-decoration: none;
+  color: #FFB55A;
+}
+
+.theme{
+  text-decoration: none;
+  color: black;
+}
+
+.resBtn{
+  text-decoration: none;
+  color: black;
+}

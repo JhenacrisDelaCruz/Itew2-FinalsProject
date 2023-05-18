@@ -1,0 +1,68 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="styleadmin.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="adminscript.js"></script>
+  </head>
+  <body>
+
+    <div id="container">
+      <fieldset class="fd1">
+        <img src="https://icons.veryicon.com/png/o/object/material-design-icons-1/account-settings-variant.png" >
+        <h1> WELCOME, ADMIN! </h1> 
+      </fieldset>
+
+      <fieldset class="fd1">      
+        <li onclick="window.location.href='Dashboard.html';"> DASHBOARD </li>  
+        <li onclick="window.location.href='BookingAdmin.html';"> BOOKINGS </li>  
+        <li onclick="window.location.href='EventDetails.html';"> EVENT DETAILS </li>    
+        <li onclick="window.location.href='VenueDetails.html';"> VENUE DETAILS </li>
+        <li onclick="window.location.href='ClientDetails.html';"> CLIENT DETAILS </li>
+        <li onclick="window.location.href='FrontPage.html';"> LOG OUT </li>
+      </fieldset>
+        
+      <div class="innercon">
+        <fieldset class="fd2">
+          <h2 class = "venueTitle"> VENUE DETAILS </h2>
+          <fieldset id="fd3">
+            <p>Item Name : <input type="text" id="tfItemName2" placeholder="Enter a new option"></p>
+            <p>Item Price : <input type="text" id="tfItemPrice2" placeholder="Enter a new price option"></p>
+            <p>Item Type : 
+              <select id="item_type2">
+                <option value="venue">Venue</option>
+                <option value="styling">Styling</option>
+              </select><br><br></p>
+            <button id="btnAddOption2">Add Option</button>
+        </fieldset>
+
+        <fieldset id="fdDetails2">
+          <legend> DETAILS </legend>
+          <table class="header4"><tr> <th>Venue Location</th> <th>Price</th> <th>Action</th> </tr></table>
+          <div id="ven">
+            <table id = "venue">
+                <tr> <td>Laguna</td> <td>35k</td></tr>
+                <tr> <td>Cavite</td> <td>20k</td></tr>
+                <tr> <td>Manila</td> <td>30k</td></tr>
+                <tr> <td>Tagaytay</td> <td>40k</td></tr>
+                <tr> <td>Batangas</td> <td>50k</td></tr>
+            </table>
+          </div>
+
+          <table class="header5"><tr> <th>Styling</th> <th>Price</th></tr></table>
+          <div id="sty">
+            <table id = "styling">
+              <tr> <td>Rustic</td> <td>30k</td></tr> 
+              <tr> <td>Glamour</td> <td>50k</td></tr>
+              <tr> <td>Vintage</td> <td>50k</td></tr>
+              <tr> <td>Greenery</td> <td>35k</td></tr>
+              <tr> <td>Garden Spring</td> <td>40k</td></tr>
+              <tr> <td>Customized</td> <td>25k</td></td></tr>
+              <tr> <td>Thematic</td> <td>25k</td></tr>
+            </table>
+          </div>
+        </fieldset>
+      </fieldset>
+    </div>
+  </div>
+</body>
+</html>

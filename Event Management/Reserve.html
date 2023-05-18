@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="utf-8" />
+  <meta name = "viewport" content = "width=device-width, initial-scale=1.0" />
+  <title>POSH PEONY EVENTS</title>
+  <link href = "ReserveStyle.css" rel = "stylesheet" type = "text/css">
+  <script src = "https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src = "ReserveAnimation.js"></script>
+
+</head>
+<body>
+
+  <header>
+    <h1> <a class = "h1" href = "Home.html"> Posh Poeny Events </a></h1>
+    <nav>
+      <ul>
+        <li> <a href = "Home.html"> HOME </a> </li>
+        <li> <a href = "Event.html"> EVENTS </a> </li>
+        <li> <a href = "AboutUs.html"> ABOUT US </a> 
+        <li> <a href = "Reserve.html" class = "res"> RESERVE NOW </a> </li>
+        <li> <a href = "ClientProfile.html" class = "acc"> <img class = "profile" src = "https://icones.pro/wp-content/uploads/2022/07/icones-d-administration-jaunes.png"> </a> </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    
+    <img class = "frontpage" src = "https://hizonscatering.com/wp-content/uploads/2016/09/shutterstock_309840344.jpg">
+
+    <h1 class = "H1"> LET'S WORK TOGETHER TO MAKE IT ONE TO REMEMBER! </h1>
+    <p class = "H1Desc"> Feel free to get in touch with us. </p>
+
+    <p class = "offer"> WHAT WE OFFER? </p>
+    <p class = "see"> You may explore the events, venus, services, styling and add-ons that we offer and its prices. <br><br> NOTE: No matter where the venue is, as long as it is within the city then it is the fixed price. </p>
+
+
+    <div class = "tables">
+    <!-- TABLE FOR EVENT -->
+      <p class = "eventTable"> EVENTS </p>
+      <table id = "event" class = "event">
+        <tr> <th>Event</th> <th>Price</th> </tr>
+        <tr> <td>Wedding</td> <td>80k</td> </tr>
+        <tr> <td>Debut</td> <td>75k</td> </tr>
+        <tr> <td>Corporate</td> <td>60k</td> </tr>
+        <tr> <td>Kids Party</td> <td>30k</td> </tr>
+        <tr> <td>Private Party</td> <td>50k</td> </tr>
+      </table>
+
+
+      <!-- TABLE FOR VENUE -->
+      <p class = "venueTable"> VENUE </p>
+      <table id = "venue" class = "venue">
+        <tr> <th>Venue Location</th> <th>Price</th> </tr>
+        <tr> <td>Laguna</td> <td>35k</td> </tr>
+        <tr> <td>Cavite</td> <td>20k</td> </tr>
+        <tr> <td>Manila</td> <td>30k</td> </tr>
+        <tr> <td>Tagaytay</td> <td>40k</td> </tr>
+        <tr> <td>Batangas</td> <td>50k</td> </tr>
+      </table>
+
+
+      <!-- TABLE FOR SERVICES -->
+      <p class = "serviceTable"> EVENT SERVICES </p>
+      <table id = "service">
+        <tr> <th>Event Service</th> <th>Price</th> </tr>
+        <tr> <td>Audiovisual, Lights and Sound Rental</td> <td>25k</td> </tr>
+        <tr> <td>Exhibition Stand Systems</td> <td>20k</td> </tr>
+        <tr> <td>Décor and Event Production</td> <td>30k</td> </tr>
+        <tr> <td>Marketing and Merchandise</td> <td>15k</td> </tr>
+        <tr> <td>Artist, Talent and Entertainment</td> <td>15k</td> </tr>
+        <tr> <td>Photo and Video Services</td> <td>10k</td> </tr>
+      </table>
+
+
+      <!-- TABLE FOR STYLING -->
+      <p class = "styleTable"> STYLING</p>
+      <table id = "styling">
+        <tr> <th>Styling</th> <th>Price</th> </tr>
+        <tr> <td>Rustic</td> <td>30k</td> </tr> 
+        <tr> <td>Glamour</td> <td>50k</td> </tr>
+        <tr> <td>Vintage</td> <td>50k</td> </tr>
+        <tr> <td>Greenery</td> <td>35k</td> </tr>
+        <tr> <td>Garden Spring</td> <td>40k</td> </tr>
+        <tr> <td>Customized</td> <td>25k</td> </tr>
+        <tr> <td>Thematic</td> <td>25k</td> </tr>
+      </table>
+
+      <p class = "addOnsTable"> ADD-ONS </p>
+      <table id = "add-ons">
+        <tr> <th>Add-On</th> <th>Price</th> </tr> <tr> <td>Beverage Station</td> <td>10k</td> </tr>
+        <tr> <td>Bread Station</td> <td>10k</td> </tr>
+        <tr> <td>Charcuterie Station</td> <td>20k</td> </tr>
+        <tr> <td>Dessert Station</td> <td>15k</td> </tr>
+      </table>
+    </div>
+
+    <div class = "resBg" id = "ResBg">   
+      <h1 class = "resTitle"> RESERVATION FORM </h1>
+      <form id="reservationForm">
+
+        <label for="status" id = "status"> </label>
+        <label for="name" class = "name"> NAME: </label>
+        <input type="text" id="name" name="name" required class = "nameField">
+        
+        <label for="email" class = "email"> EMAIL: </label>
+        <input type="email" id="email" name="email" required class = "emailField">
+        
+        <label for="phone" class = "phone"> PHONE: </label>
+        <input type="tel" id="phone" name="phone" required class = "phoneField">
+
+
+        <label for="event-date" class = "dateLabel"> EVENT DATE </label>
+        <input type="date" id="event-date" name="event-date" required class = "dateSelect">
+
+        <label for="event-time" class = "timeLabel"> EVENT TIME: </label>
+        <input type="time" id="event-time" name="event-time" required class = "timeInput">
+        <select id="event-time-am-pm" name="event-time-am-pm" required class = "timeSelect">
+          <option value="am">AM</option>
+          <option value="pm">PM</option>
+        </select>
+
+      
+      <!-- EVENT -->
+        <label for="event-type" class = "eventLabel"> EVENT TYPE:</label>
+        <select id="event-type" name="event-type" required class = "eventSelect">
+          <option value="" disabled selected>Select event type</option>
+          <option value="Wedding"> Wedding </option>
+          <option value="Debut"> Debut </option>
+          <option value="Corporate"> Corporate </option>
+          <option value="Kids Party"> Kids Party </option>
+          <option value="Private Party"> Private Party </option>
+        </select><br><br>
+        
+        <!-- VENUE -->
+        <label for="venue-location" class = "venueLabel"> VENUE: </label>
+        <select id="venue-location" name="venue-location" required class = "venueSelect">
+          <option value="" disabled selected>Select venue location</option>
+          <option value="Laguna"> Laguna </option>
+          <option value="Cavite"> Cavite </option>
+          <option value="Manila"> Manila </option>
+          <option value="Tagaytay"> Tagaytay </option>
+          <option value="Batangas"> Batangas </option>
+        </select><br><br>
+        
+        <!-- STYLE -->
+        <label for="theme" class = "style"> THEME: </label>
+        <select id="theme" name="theme" required class = "styleSelect">
+          <option value="" disabled selected> Select theme </option>
+          <option value="Rustic"> Rustic </option>
+          <option value="Glamour"> Glamour </option>
+          <option value="Vintage"> Vintage </option>
+          <option value="Greenery"> Greenery </option>
+          <option value="Garden Spring"> Garden Spring </option>
+          <option value="Customized"> Customized </option>
+          <option value="Thematic"> Thematic </option>
+        </select>
+
+        <label for="num-attendees" class = "attendeesLabel"> NO. OF ATTENDEES </label>
+        <input type="number" id="num-attendees" required class = "attendeesInput">
+
+        <!-- EVENT SERVICES -->
+        <label for="services" class = "serviceLabel"> SERVICES: </label>
+
+          <ul id = "servicesList">
+            <li>
+              <input type="checkbox" id="audiovisual" name="event_service" value="audiovisual">
+              <label for="audiovisual"> Audiovisual, Lights and Sound Rental </label>
+            </li>
+
+            <li>
+              <input type="checkbox" id="exhibition" name="event_service" value="exhibition">
+              <label for="exhibition"> Exhibition Stand Systems</label>
+            </li>
+
+            <li>
+              <input type="checkbox" id="decor" name="event_service" value="decor">
+              <label for="decor"> Décor and Event Production </label>
+            </li>
+
+            <li>
+              <input type="checkbox" id="marketing" name="event_service" value="marketing">
+              <label for="marketing">Marketing and Merchandise.</label>
+            </li>
+
+            <li>
+              <input type="checkbox" id="artist" name="event_service" value="artist">
+              <label for="artist">Artist, Talent and Entertainment.</label>
+            </li>
+
+            <li>
+              <input type="checkbox" id="photo" name="event_service" value="photo">
+              <label for="photo">Photo and Video Services.</label>
+            </li>
+          </ul>
+
+        <!-- ADD-ONS -->
+        <label for="addOns" class = "addOnsLabel"> ADD-ONS: </label>
+
+          <ul id = "addOnsList">
+            <li>
+              <input type="checkbox" id="beverage" name="add_on" value="beverage">
+              <label for="beverage">Beverage Station</label>
+            </li>
+
+            <li>
+              <input type="checkbox" id="bread" name="add_on" value="bread">
+              <label for="bread">Bread Station</label>
+            </li>
+
+            <li>
+              <input type="checkbox" id="charcuterie" name="add_on" value="charcuterie">
+              <label for="charcuterie">Charcuterie Station</label>
+            </li>
+
+            <li>
+              <input type="checkbox" id="dessert" name="add_on" value="dessert">
+              <label for="dessert">Dessert Station</label>
+            </li>
+          </ul>
+
+          <label for="message" class = "messageLabel"> ADDITIONAL MESSAGE: </label>
+          <textarea id="message" name="message" class = "messageInput"></textarea>
+
+          <button type="next" class="btnSubmit"> SUBMIT </button>
+        </form>
+      </div>
+  </main>
+
+  <footer id = "footer">
+    
+    <div class="explore">
+      <h3>Explore us!</h3>
+      <ul>
+        <li><a href="Home.html"> Home </a></li>
+        <li><a href="Events.html"> Events </a></li>
+        <li><a href="AboutUs.html"> About Us </a></li>
+        <li><a href="Reserve.html"> Reserve now </a></li>
+      </ul>
+    </div>
+
+    <div class="get-in-touch">
+      <h3>Get in touch!</h3>
+      <ul>
+        <li> Contact Us </li>
+        <li> Phone number: +1-123-456-7890 </li>
+        <li> Business Hours: 10:00 A.M. - 6:00 P.M. </li>
+      </ul>
+    </div>
+
+    <div class = "mini-square"></div>
+    <div class = "mini-square2">
+      <p class = "busNameFooter"> POSH <br> PEONY <br> EVENTS </p>
+    </div>
+
+    <p class = "reserve">© 2023 POSH PONY ENVENTS</p>
+
+    <div class = "line"></div>
+    <div class = "line2"></div>
+
+    </footer>
+</body>
+</html

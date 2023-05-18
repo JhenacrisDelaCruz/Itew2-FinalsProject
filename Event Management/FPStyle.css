@@ -1,0 +1,928 @@
+/* Default positioning */
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background-color: #17245A;
+  box-shadow:  0px 2px 10px black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: height 0.3s ease;
+}
+
+header.shrink{
+  height: 60px;
+}
+
+.client-btn{
+  display: flex;
+  border-radius: 4px;
+  border: solid .1rem;
+  font-style: bolder;
+  font-family: aharoni;
+  color: black;
+  text-align: center;
+  font-size: 18px;
+  padding: 16px;
+  width: 125px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-top: 2rem;
+  margin-left: 13rem;
+  margin-right: 4rem;
+  box-shadow: 5px 5px 10px darkgray;
+  background-color: white;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  transition: all .3s ease;
+}
+
+.admin-btn{
+  display: flex;
+  border-radius: 4px;
+  border: solid .1rem;
+  font-style: bolder;
+  font-family: aharoni;
+  color: black;
+  text-align: center;
+  font-size: 18px;
+  padding: 16px;
+  width: 130px;
+  cursor: pointer;
+  margin-left: 28rem;
+  margin-top: 2.5rem;
+  box-shadow: 5px 5px 10px darkgray;
+  background-color: white;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  transition: all .3s ease;
+}
+
+.admin-btn:hover{
+  letter-spacing: 3px;
+  background-color: hsl(147deg, 100%, 18%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(0, 92, 41) 0px 7px 29px 0px;
+  border: none;
+}
+
+.client-btn:hover{
+  letter-spacing: 3px;
+  background-color: hsl(147deg, 100%, 18%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(0, 92, 41) 0px 7px 29px 0px;
+  border: none;
+}
+
+.admin-btn:active{
+  letter-spacing: 3px;
+  background-color: hsl(147deg, 100%, 18%);
+  color: hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(0, 92, 41) 0px 7px 29px 0px;
+  border: none;
+  transition: 50ms;
+}
+
+.client-btn:active{
+  letter-spacing: 3px;
+  background-color: hsl(147deg, 100%, 18%);
+  color: hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(0, 92, 41) 0px 7px 29px 0px;
+  border: none;
+  transition: 50ms;
+}
+
+.container{
+  padding-top: 5rem;
+  background: white;
+}
+
+.square{
+  display: flex;
+  width: 14rem;
+  height: 22rem;
+  margin-left: 10rem;
+  margin-top: 6rem;
+  background-color: gray;
+}
+
+.square2{
+  display: flex;
+  width: 16rem;
+  height: 20rem;
+  border: solid #17245A;
+  margin-left: 5rem;
+  margin-top: -21rem;
+  background-color: white;
+}
+
+.busName{
+  font-family: verdana;
+  font-weight: bolder;
+  font-size: 3em;
+  margin-left: -3rem;
+  margin-top: 5.5rem;
+  margin-bottom: 5rem ;
+  color: #26619C;
+  background-color: white;
+  text-align: right;
+}
+
+.tagline{
+  color: black;
+  font-family: Segoe UI Historic;
+  font-style: italic;
+  font-weight: bolder;
+  text-align: justify;
+  margin-left: 6rem;
+  margin-top: 1rem;
+  font-size: 1.2em;
+}
+
+.link{
+  font-family: Tahoma;
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.userSelection{
+  height: 31.5rem;
+  width: 50rem;
+  align-content: center;
+  margin-left: 39.3rem;
+  margin-top: -25rem;
+  margin-bottom: 4.3rem;
+  background-color: #FFF7D6;
+  box-shadow: 5px 5px 10px darkgray;
+  border-radius: 2rem;
+  border-style: solid;
+}
+
+.client{
+  height: 8rem;
+  width: 8rem;
+  margin-left: 12.5rem;
+  margin-top: 9rem;
+}
+
+.admin{
+  display: flex;
+  height: 8rem;
+  width: 8rem;
+  margin-left: 28rem;
+  margin-top: -15rem;
+}
+
+.hello{
+  font-family: Charge Vector Black;
+  font-style: bolder;
+  font-size: 2em;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: -5rem;
+}
+
+/* Footer */
+footer{
+  position: relative;
+  width: 100%;
+  background-color: #17245A;
+  box-shadow:  -.1rem 0rem .8rem .1rem black;
+  color: #fff;
+  text-align: center;
+  padding: 56px 0rem 40px;
+}
+
+.explore{
+  margin-left: 65rem;
+  margin-top: -2rem;
+  text-align: left;
+}
+
+.explore ul li{
+  list-style: none;
+  margin: 5px;
+}
+
+.explore ul li a{
+  text-decoration: none;
+  color: white;
+}
+
+.get-in-touch{
+  margin-top: -9.5rem;
+  margin-left: 77rem;
+  text-align: left;
+}
+
+.get-in-touch ul li{
+  list-style: none;
+  margin: 5px;
+}
+
+.get-in-touch ul li a{
+  text-decoration: none;
+  color: white;
+}
+
+.reserve{
+  margin-top: 4rem;
+  margin-bottom: -4rem;
+  margin-left: 75rem;
+  color: white;
+  font-weight: bolder;
+}
+
+.mini-square{
+  display: flex;
+  width: 8rem;
+  height: 10rem;
+  margin-left: 8rem;
+  margin-top: -7rem;
+  background-color: black;
+}
+
+.mini-square2{
+  display: flex;
+  background-color: #17245A ;
+  border: solid white;
+  height: 8rem;
+  width:8rem;
+  margin-left: 5rem;
+  margin-top: -9rem;
+}
+
+.busNameFooter{
+   font-family: verdana;
+  font-weight: bolder;
+  font-size: 1.4em;
+  margin-left: 1rem;
+  margin-top: 1.3rem;
+  color: white;
+  background-color: #17245A;
+  text-align: right;
+}
+
+.line{
+  height: 14rem;
+  width: .1rem;
+  margin-top: -16rem;
+  margin-left: 25rem;
+  background-color: white;
+}
+
+.line2{
+  height: 14rem;
+  width: .1rem;
+  margin-top: -14rem;
+  margin-left: 62rem;
+  background-color: white;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  gap: 10px;
+  max-width: 350px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  position: relative;
+}
+
+/* The background */
+.signUp{
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+}
+  
+.title{
+  font-size: 28px;
+  font-family: verdana;
+  font-weight: bolder;
+  color: #FFD300;
+  font-weight: 600;
+  letter-spacing: -1px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+}
+
+.title::before,.title::after{
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  left: 0px;
+  background-color: #FFD300;
+}
+  
+.title::before{
+  width: 18px;
+  height: 18px;
+  background-color: #FFD300;
+}
+  
+.title::after{
+  width: 18px;
+  height: 18px;
+  animation: pulse 1s linear infinite;
+}
+
+.message{
+  color: rgba(88, 87, 87, 0.822);
+  font-size: 18px;
+  text-align: center;
+  margin-top: 1rem;
+  font-weight: bolder;
+}
+
+.logIn-link{
+  color: rgba(88, 87, 87, 0.822);
+  font-size: 16px;
+  text-align: center;
+  margin-top: 1.5rem;
+  margin-left: 14.5rem;
+  margin-bottom: .5rem;
+  white-space: nowrap;
+}
+
+.logIn-link a{
+  color: royalblue;
+}
+
+.logIn-link a:hover{
+  text-decoration: underline royalblue;
+}
+
+/* Modal Content/Box */
+.signup-content{
+  border-radius: 1rem;
+  background-color: #fefefe;
+  box-shadow: 5px 5px 10px black;
+  margin: 8% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  max-width: 47.5rem;
+  max-height: 65rem;
+}
+
+.form label{
+  position: relative;
+}
+
+.form label .FName{
+  width: 100%;
+  padding: 10px 10px 20px 10px;
+  outline: 0;
+  border: 1px solid rgba(105, 105, 105, 0.397);
+  border-radius: 10px;
+  margin-left: 1rem ;
+}
+
+.form label .FName + span{
+  position: absolute;
+  left: 10px;
+  top: 15px;
+  color: grey;
+  font-size: 0.9em;
+  cursor: text;
+  transition: 0.3s ease;
+  margin-left: 1rem;
+}
+
+.form label .FName:placeholder-shown + span{
+  top: 15px;
+  font-size: 0.9em;
+}
+
+.form label .FName:focus + span,.form label .FName:valid + span{
+  top: 30px;
+  font-size: 0.7em;
+  font-weight: 600;
+}
+
+.form label .FName:valid + span{
+  color: green;
+}
+
+.form label .LName{
+  display: flex;
+  width: 100%;
+  padding: 10px 10px 20px 10px;
+  outline: 0;
+  border: 1px solid rgba(105, 105, 105, 0.397);
+  border-radius: 10px;
+  margin-left: 22rem ;
+  margin-top: -3.7rem;
+}
+
+.form label .LName + span{
+  position: absolute;
+  left: 10px;
+  top: 15px;
+  color: grey;
+  font-size: 0.9em;
+  cursor: text;
+  transition: 0.3s ease;
+  margin-left: 22rem;
+  margin-top: -3.7rem;
+  white-space: nowrap;
+}
+
+.form label .LName:placeholder-shown + span{
+  top: 15px;
+  font-size: 0.9em;
+}
+
+.form label .LName:focus + span,.form label .LName:valid + span{
+  top: 30px;
+  font-size: 0.7em;
+  font-weight: 600;
+}
+
+.form label .LName:valid + span{
+  color: green;
+}
+
+.form label .Email{
+  display: flex;
+  width: 100%;
+  padding: 10px 10px 20px 10px;
+  outline: 0;
+  border: 1px solid rgba(105, 105, 105, 0.397);
+  border-radius: 10px;
+  margin-left: 1rem ;
+  margin-top: .5rem;
+}
+
+.form label .Email + span{
+  position: absolute;
+  left: 10px;
+  top: 15px;
+  color: grey;
+  font-size: 0.9em;
+  cursor: text;
+  transition: 0.3s ease;
+  margin-left: 1rem;
+  margin-top: .5rem;
+}
+
+.form label .Email:placeholder-shown + span{
+  top: 15px;
+  font-size: 0.9em;
+}
+
+.form label .Email:focus + span,.form label .Email:valid + span{
+  top: 30px;
+  font-size: 0.7em;
+  font-weight: 600;
+}
+
+.form label .Email:valid + span{
+  color: green;
+}
+
+.form label .Pass{
+  display: flex;
+  width: 100%;
+  padding: 10px 10px 20px 10px;
+  outline: 0;
+  border: 1px solid rgba(105, 105, 105, 0.397);
+  border-radius: 10px;
+  margin-left: 1rem ;
+  margin-top: 1rem;
+}
+
+.form label .Pass + span{
+  position: absolute;
+  left: 10px;
+  top: 15px;
+  color: grey;
+  font-size: 0.9em;
+  cursor: text;
+  transition: 0.3s ease;
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+
+.form label .Pass:placeholder-shown + span{
+  top: 15px;
+  font-size: 0.9em;
+}
+
+.form label .Pass:focus + span,.form label .Pass:valid + span{
+  top: 30px;
+  font-size: 0.7em;
+  font-weight: 600;
+}
+
+.form label .Pass:valid + span{
+  color: green;
+}
+
+.form label .ConfirmPass{
+  display: flex;
+  width: 100%;
+  padding: 10px 10px 20px 10px;
+  outline: 0;
+  border: 1px solid rgba(105, 105, 105, 0.397);
+  border-radius: 10px;
+  margin-left: 1rem ;
+  margin-top: 1rem;
+}
+
+.form label .ConfirmPass + span{
+  position: absolute;
+  left: 10px;
+  top: 15px;
+  color: grey;
+  font-size: 0.9em;
+  cursor: text;
+  transition: 0.3s ease;
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+
+.form label .ConfirmPass:placeholder-shown + span{
+  top: 15px;
+  font-size: 0.9em;
+}
+
+.form label .ConfirmPass:focus + span,.form label .ConfirmPass:valid + span{
+  top: 30px;
+  font-size: 0.7em;
+  font-weight: 600;
+}
+
+.form label .ConfirmPass:valid + span{
+  color: green;
+}
+
+.signup-btn{
+  outline: none;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 16px;
+  color: black;
+  border: solid black .1rem;
+  transform: .3s ease;
+  margin-top: 2rem;
+  width: 10rem;
+  box-shadow: 5px 5px 10px darkgray;
+  background-color: white;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  transition: all .3s ease;
+  margin-left: 33rem;
+}
+
+.signup-btn:hover{
+  background-color: #FFD300;
+  color: black;
+  font-size: 20px;
+  border: none;
+}
+
+.signup-btn:active{
+ box-shadow: rgb(0, 92, 41) 0px 7px 20px 0px;
+ border: none;
+ transition: 50ms;
+}
+
+.container{
+  padding-top: 5rem;
+  background: white;
+}
+
+
+.cancelBtn{
+  outline: none;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 16px;
+  color: black;
+  border: solid black .1rem;
+  transform: .3s ease;
+  margin-top: -3.3rem;
+  margin-bottom: -4rem;
+  width: 10rem;
+  margin-left: -1rem;
+  box-shadow: 5px 5px 10px darkgray;
+  background-color: white;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  transition: all .3s ease;
+}
+
+.cancelBtn:hover{
+  background-color: #FFD300;
+  color: black;
+  font-size: 20px;
+  border: none;
+}
+
+.cancelBtn:active{
+ box-shadow: rgb(0, 92, 41) 0px 7px 20px 0px;
+ border: none;
+ transition: 50ms;
+}
+
+@keyframes pulse{
+  from{
+    transform: scale(0.9);
+    opacity: 1;
+  }
+
+  to{
+    transform: scale(1.8);
+    opacity: 0;
+  }
+}
+
+/* Close Button */
+.close{
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus{
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.passReq{
+  position: fixed;
+  margin-left: 25.5rem;
+  margin-top: 8.3rem;
+  white-space: nowrap;
+}
+
+.passReq ul li{
+  list-style: none;
+  margin-left: .1rem;
+}
+
+.passReq li{
+  color: gray;
+  font-size: .9em;
+  margin: .2rem;
+}
+
+.Req{
+  color: gray;
+  font-weight: bolder;
+  font-size: .9em;
+  font-family: Helvetica;
+}
+
+#passReqLength:before{
+  content: "✓ ";
+  color: green;
+}
+
+#passReqLower:before{
+  content: "✓ ";
+  color: green;
+}
+
+#passReqUpper:before{
+  content: "✓ ";
+  color: green;
+}
+
+#passReqNumber:before{
+  content: "✓ ";
+  color: green;
+}
+
+#passReqSpecial:before{
+  content: "✓ ";
+  color: green;
+}
+
+/* Password Strength */
+.password-strength{
+  margin-bottom: 10px;
+  height: 10px;
+  border-radius: 5px;
+}
+
+.login-box{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  padding: 40px;
+  margin: 12px auto;
+  transform: translate(-50%, -55%);
+  background: white;
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px 10px black;
+  border-radius: 10px;
+}
+
+.logInTitle{
+  display: flex;
+  margin-left: 7.5rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  padding: 0;
+  color: #FFD300;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.login-box .user-box{
+  position: relative;
+}
+
+.logInEmail{
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: black;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none;
+  background: transparent;
+}
+
+.logInPass{
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: black;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none;
+  background: transparent;
+}
+
+.login-box .user-box label{
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: black;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label{
+  top: -20px;
+  left: 0;
+  color: black;
+  font-size: 12px;
+}
+
+.userLogin{
+ display: inline-block;
+ border-radius: 4px;
+ background-color: #FFD300;
+ border: none;
+ color: black;
+ font-weight: bolder;
+ text-align: center;
+ font-size: 17px;
+ padding: 16px;
+ width: 130px;
+ transition: all 0.5s;
+ cursor: pointer;
+ margin-left: 6rem;
+ margin-top: 1.5rem;
+}
+
+.userLogin span{
+ cursor: pointer;
+ display: inline-block;
+ position: relative;
+ transition: 0.5s;
+}
+
+.userLogin span:after{
+ content: '»';
+ position: absolute;
+ opacity: 0;
+ top: 0;
+ right: -15px;
+ transition: 0.5s;
+}
+
+.userLogin:hover span{
+ padding-right: 15px;
+}
+
+.userLogin:hover span:after{
+ opacity: 1;
+ right: 0;
+}
+
+.logInBG{
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+}
+
+/* Close Button */
+.closeLogIn{
+  display: flex;
+  color: red;
+  font-size: 28px;
+  font-weight: bold;
+  margin-left: 20rem;
+  margin-top: -2rem;
+}
+
+.closeLogIn:hover,
+.closeLogIn:focus{
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.err-msg{
+  position: absolute;
+  margin-top: 3rem;
+  color: red;
+  font-style: italic;
+  font-size: 14px;
+  margin-left: 1.8rem;
+  white-space: nowrap;
+}
+
+.showPass{
+  position: absolute;
+  color: gray;
+  margin-left: 17rem;
+  margin-top: -2.1rem;
+  font-size: 16px;
+  font-weight: bolder;
+}
+
+.showConfirmPass{
+  position: absolute;
+  color: gray;
+  margin-left: 17rem;
+  margin-top: -2.1rem;
+  font-size: 16px;
+  font-weight: bolder;
+}
+
+.password-match-msg{
+  display: flex;
+  margin-bottom: .5rem;
+  margin-top: .3rem;
+  color: red;
+  font-style: italic;
+  font-size: 14px;
+  margin-left: 1.8rem;
+  white-space: nowrap;
+}
+
+.logInShowPass{
+  position: absolute;
+  color: gray;
+  margin-left: 18rem;
+  margin-top: -1.5rem;
+  font-size: 16px;
+  font-weight: bolder;
+}

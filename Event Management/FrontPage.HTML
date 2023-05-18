@@ -1,0 +1,151 @@
+<html>
+<head>
+	<title>POSH PEONY EVENTS</title>
+	<link rel="stylesheet" href="FPStyle.css">
+	<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+	<script src="FPScript.js"></script>
+</head>
+<body>
+	<header></header> 
+	<div class="container">
+		<div class = "square">
+			<p class = "busName"> POSH <br> PEONY <br> EVENTS </p>
+		</div>
+
+		<div class = "square2"> </div>
+		<p class = tagline> We do events. You do you. </p>
+
+		<!-- CHOOSING WHO WILL OPERATE THE WEBSITE -->
+		<div class="userSelection">
+			<p class = "hello"> Hello there. Welcome!</p>
+			<img class = "client" src="https://spaces-cdn.clipsafari.com/bkwhtczunest6kuyw39n2d8jxkj9"></img>
+			<button class="client-btn" id="client-btn"><span> I AM A CLIENT </span></button>
+			<img class = "admin" src="https://www.pngmart.com/files/21/Admin-Profile-Vector-PNG-Clipart.png"></img>
+			<button class="admin-btn" id="admin-btn"><span> I AM AN ADMIN </span></button>
+			<p class = "link" id = "signUp-link"> Client/s, Haven't signed into your account before? <a href = "#signup-form" > Sign Up here</a></p>
+		</div>
+	</div>
+
+	<footer>
+		<div class="explore">
+			<h3>Explore us!</h3>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#events">Events</a></li>
+				<li><a href="#venues">Venue Locations</a></li>
+				<li><a href="#about-us">About us</a></li>
+				<li><a href="#contact-us">Contact us</a></li>
+			</ul>
+		</div>
+
+		<div class="get-in-touch">
+			<h3>Get in touch!</h3>
+			<ul>
+				<li><a href="#contact-us">Contact Us</a></li>
+				<li><a href="#privacy-policy">Privacy Policy</a></li>
+				<li><a href="#">Phone number: +1-123-456-7890</a></li>
+				<li><a href="#">Business Hours: 10:00 A.M. - 6:00 P.M.</a></li>
+			</ul>
+		</div>
+	</div>
+	
+	<div class = "mini-square"></div>
+	<div class = "mini-square2">
+		<p class = "busNameFooter"> POSH <br> PEONY <br> EVENTS </p>
+	</div>
+
+	<p class = "reserve">© 2023 POSH PONY EVENT</p>
+
+	<div class = "line"></div>
+	<div class = "line2"></div>
+
+	</div>
+	</footer>
+
+	<!-- SIGN UP -->
+	<div id="signup-form" class="signUp">
+		<div class="signup-content">
+			<span class="close">&times;</span>
+			<p class="title">SIGN-UP</p>
+        	<p class="message">Sign-up and create your event now!</p>
+
+        	<form class = "form" id = "signUp-Form" onsubmit="return checkForm()">
+        		<label>
+        			<input required="" placeholder="" type="text" class="FName" id="FName" oninput="checkForm()">
+        			<span>FIRST NAME</span>
+            	</label>
+
+            	<p class= "err-msg" id = "err-msg"></p>
+
+            	<label>
+            		<input required="" placeholder="" type="text" class="LName" id="LName" oninput="checkForm()">
+            		<span>LAST NAME</span>
+            		<p class= "err-msg" id = "err-msg"></p>
+            	</label>
+	            
+	            <label>
+	                <input required="" placeholder="" type="email" class="Email" id="email">
+	                <span>E-MAIL</span>
+	            </label>
+	            
+	            <label>
+	                <input required="" placeholder="" type="password" class="Pass" id="password" oninput="checkPassword()">
+	                <span>PASSWORD</span>
+	                <span class = "showPass" id="showPass"> Show </span>
+	            </label>
+	            
+	            <label>
+	                <input required="" placeholder="" type="password" class="ConfirmPass" id="confirm-password-input" oninput="checkPasswordMatch()">
+	                <span>CONFIRM PASSWORD</span>
+	                <span class = "showConfirmPass" id="showConfirmPass"> Show </span>
+	                <span class= "password-match-msg" id="password-match-msg"></span>
+	            </label>
+
+	            <div id="passReq" class="passReq">
+	            	<p class="Req">Password must contain:</p>
+	            	<ul>
+	                    <li id = "passReqLength">At least 8 characters</li>
+	                    <li id = "passReqLower">At least one lowercase letter</li>
+	                    <li id = "passReqUpper">At least one uppercase letter</li>
+	                    <li id = "passReqNumber">At least one number</li>
+	                    <li id = "passReqSpecial">At least one special character</li>
+	                </ul>
+            	</div>
+            
+            <div id="password-strength" class="password-strength"></div>
+            
+            <button type="submit" class="signup-btn">Sign Up</button>
+            <button type="button" class="cancelBtn">Cancel</button>
+
+            <p id="logIn-link" class="logIn-link">Already have an account? <a href="#logInForm">Sign-In</a></p>
+        </form>
+    </div>
+</div>
+	
+	<!-- LOG-IN FORM -->
+	<div class="logInBG" id = "logInForm" style = "display: none;">
+		<div class="login-box">
+			<span class="closeLogIn">&times;</span>
+			<p class="logInTitle">Login</p>
+
+			<form id = "login-form">
+				<div class="user-box">
+					<input required="" name="" type="text" class = logInEmail id="logInEmail">
+					<label>Email</label>
+	    		</div>
+	    
+			    <div class="user-box">
+			    	<input required="" name="" type="password" class="logInPass" id= "logInPass">
+			      	<label>Password</label>
+			      	<span id = "logInShowPass" class = "logInShowPass" >Show</span>
+			      	<button class = "userLogin" id = "userLogin">
+			      		<span>LOG IN</span>
+					</button>
+			  	</div>
+	  		</form>
+
+	  		<p id = "signUp-link2" class = "signUp-link" style="margin-top: 1rem; margin-bottom: -1rem; margin-left: 3.5rem;">Don't have an account? <a href="#SignUpForm">Sign up!</a></p>
+		</div>
+	</div>
+</body>
+</html>

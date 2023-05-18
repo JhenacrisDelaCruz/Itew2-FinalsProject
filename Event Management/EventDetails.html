@@ -1,0 +1,81 @@
+<html>
+<head>
+  <link rel="stylesheet" href="styleadmin.css">
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="adminscript.js"></script>
+  <script>
+    
+  </script>
+</head>
+<body>
+  
+  <div id="container">
+    <fieldset class="fd1">
+      <img src="https://icons.veryicon.com/png/o/object/material-design-icons-1/account-settings-variant.png" >
+      <h1> WELCOME, ADMIN! </h1> 
+    </fieldset>
+    
+    <fieldset class="fd1">      
+      <li onclick="window.location.href='Dashboard.html';"> DASHBOARD </li>  
+      <li onclick="window.location.href='BookingAdmin.html';"> BOOKINGS </li>  
+      <li onclick="window.location.href='EventDetails.html';"> EVENT DETAILS </li>    
+      <li onclick="window.location.href='VenueDetails.html';"> VENUE DETAILS </li>
+      <li onclick="window.location.href='ClientDetails.html';"> CLIENT DETAILS </li>
+      <li onclick="window.location.href='FrontPage.html';"> LOG OUT </li>
+    </fieldset>
+      
+    <div class="innercon">
+      <fieldset class="fd2">
+        <h2 class = "eventTitle"> EVENT DETAILS </h2>
+        <fieldset id="fd3">
+          <p>Item Name : <input type="text" id="tfItemName" placeholder="Enter a new option"></p>
+          <p>Item Price : <input type="text" id="tfItemPrice" placeholder="Enter a new price option"></p>
+          <p>Item Type : 
+            <select id="item_type">
+              <option value="event">Event</option>
+              <option value="service">Service</option>
+              <option value="add-ons">Add-Ons</option>
+            </select><br><br></p>
+          <button id="btnAddOption">Add Option</button>
+        </fieldset>
+
+        <fieldset id="fdDetails">
+          <legend> DETAILS </legend>
+            <table class="header1"><tr> <th>Event</th> <th>Price</th></tr></table>
+              <div id="evt">
+                <table id="event">
+                  <tr> <td>Wedding</td> <td>80k</td></tr>
+                  <tr> <td>Debut</td> <td>75k</td></tr>
+                  <tr> <td>Corporate</td> <td>60k</td> </tr>
+                  <tr> <td>Kids Party</td> <td>30k</td> </tr>
+                  <tr> <td>Private Party</td> <td>50k</td> </tr>
+                </table>
+              </div>
+
+            <table class="header2"><tr><th>Event Service</th> <th>Price</th></tr></table>
+            <div id="evtservice">
+              <table id="service">
+                <tr><td>Audiovisual, Lights and Sound Rental</td> <td>25k</td></tr>
+                <tr><td>Exhibition Stand Systems</td> <td>20k</td></tr>
+                <tr><td>Décor and Event Production</td> <td>30k</td></tr>
+                <tr><td>Marketing and Merchandise</td> <td>15k</td></tr>
+                <tr><td>Artist, Talent and Entertainment</td> <td>15k</td></tr>
+                <tr> <td>Photo and Video Services</td> <td>10k</td></tr>
+              </table>
+            </div>
+
+            <table class="header3"><tr> <th>Add-On</th> <th>Price</th> </tr></table>
+            <div id="addons">
+              <table id="add-ons">
+                <tr> <td>Beverage Station</td> <td>10k</td></tr>
+                <tr> <td>Bread Station</td> <td>10k</td></tr>
+                <tr> <td>Charcuterie Station</td> <td>20k</td></tr>
+                <tr> <td>Dessert Station</td> <td>15k</td></tr>
+              </table>
+            </div>
+        </fieldset>
+      </fieldset>
+    </div>
+  </div>
+</body>
+</html>

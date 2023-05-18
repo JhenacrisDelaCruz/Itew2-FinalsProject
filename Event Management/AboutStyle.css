@@ -1,0 +1,898 @@
+/* Default positioning */
+*{
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+/* Header */
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90px;
+  background-color: #17245A;
+  box-shadow:  0px 2px 10px black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: height 0.3s ease;
+}
+
+header.shrink{
+  height: 4rem;
+}
+
+.h1{
+  margin: 0;
+  padding: 1rem;
+  flex: 1;
+  list-style: none;
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li{
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav a{
+  color: #fff;
+  font-weight: bolder;
+  font-family: Poppins, MS;
+  text-decoration: none;
+}
+
+/* Main */
+main{
+  margin: 20px;
+  padding-bottom: 10%;
+}
+
+/* Square */
+.square{
+  width: 100px;
+  height: 100px;
+  background-color: #EE6F57;
+  margin: 20px auto;
+}
+
+#footer{
+  background-color: #17245A;
+  box-shadow:  -.1rem 0rem .8rem .1rem black;
+  color: #fff;
+  position: relative;
+  width: 100%;
+  margin-top: -100px;
+  clear: both;
+  color: white;
+  text-align: center;
+  padding: 56px 0rem 40px;
+}
+
+.explore{
+  margin-left: 65rem;
+  margin-top: -2rem;
+  text-align: left;
+}
+
+.explore ul li {
+  list-style: none;
+  margin: 5px;
+}
+
+.explore ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.get-in-touch{
+  margin-top: -8rem;
+  margin-left: 77rem;
+  text-align: left;
+}
+
+.get-in-touch ul li {
+  list-style: none;
+  margin: 3px;
+}
+
+.get-in-touch ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.reserve{
+  margin-top: 4rem;
+  margin-bottom: -4rem;
+  margin-left: 75rem;
+  color: white;
+  font-weight: bolder;
+}
+
+.mini-square{
+  display: flex;
+  width: 8rem;
+  height: 10rem;
+  margin-left: 8rem;
+  margin-top: -7rem;
+  background-color: black;
+}
+
+.mini-square2{
+  display: flex;
+  background-color: #17245A ;
+  border: solid white;
+  height: 8rem;
+  width:8rem;
+  margin-left: 5rem;
+  margin-top: -9rem;
+}
+
+.busNameFooter{
+   font-family: verdana;
+  font-weight: bolder;
+  font-size: 1.4em;
+  margin-left: 1rem;
+  margin-top: 1.3rem;
+  color: white;
+  background-color: #17245A;
+  text-align: right;
+}
+
+.line{
+  height: 14rem;
+  width: .1rem;
+  margin-top: -16rem;
+  margin-left: 25rem;
+  background-color: white;
+}
+
+.line2{
+  height: 14rem;
+  width: .1rem;
+  margin-top: -14rem;
+  margin-left: 62rem;
+  background-color: white;
+}
+
+.frontPage{
+  display: flex;
+  background-repeat: no-repeat;
+  margin-top: -30rem;
+  width: 93.7rem;
+  margin-left: -1.3rem;
+}
+
+.H1{
+  font-size: 75px;
+  font-weight: bolder;
+  font-family: Arial Black;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  text-align: center;
+  margin-top: -23rem;
+}
+
+.H1Desc{
+  font-size: 28px;
+  font-weight: bolder;
+  font-family: Trebuchet MS;
+  color: white;
+  text-shadow: 2px 2px 4px black;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 20rem;
+}
+
+.about1{
+height: 20rem;
+width: 45rem;
+margin-left: .5rem;
+margin-top: -10rem;
+}
+
+.about1Desc{
+  color: gray;
+  font-size: 1.5rem;
+  text-align: justify;
+  font-family: Poppins, sans-serif;
+  word-spacing: .1rem;
+  letter-spacing: .1rem;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.PpePic{
+  height: 30rem;
+  width: 40rem;
+  margin-left: 48rem;
+  margin-top: -20rem;
+}
+
+.PoshPeony{
+  border-radius: 1rem;
+  box-shadow: 5px 2px 5px gray;
+  height: 30rem;
+  width: 40rem;
+}
+
+.thrive{
+  text-align: center;
+  font-size: 2.5em;
+  font-family: Charge Vector Black;
+  color: #17245A;
+  margin-top: -10rem;
+  margin-bottom: 14rem;
+  text-shadow: 1px 1px 4px lightskyblue;
+}
+
+.AboutUs{
+  color: #EE7863;
+}
+
+.MissionBg{
+  height: 20rem;
+  width: 35rem;
+  margin-left: 2rem;
+  margin-top: 10rem;
+  background-color: #EFEDFF;
+  padding-top: 3rem;
+  padding-right: 3rem;
+  padding-left: 3rem;
+  margin-bottom: 5rem;
+  box-shadow: 2px 2px 4px gray;
+  border-radius: 1rem;
+}
+
+.Mission{
+  color: black;
+  font-size: 1.5rem;
+  text-align: justify;
+  font-family: Poppins, sans-serif;
+  word-spacing: .1rem;
+  letter-spacing: .1rem;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.VisionBg{
+  height: 20rem;
+  width: 35rem;
+  margin-left: 43rem;
+  margin-top: -19.2rem;
+  background-color: #EFEDFF;
+  padding-top: 3rem;
+  padding-right: 3rem;
+  padding-left: 3rem;
+  box-shadow: 2px 2px 4px gray;
+  border-radius: 1rem;
+}
+
+.Vision{
+  color: black;
+  font-size: 1.5rem;
+  text-align: justify;
+  font-family: Poppins, sans-serif;
+  word-spacing: .1rem;
+  letter-spacing: .1rem;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.VTitle{
+  color: #8C3C3F;
+  font-family: Charge Vector Black;
+  font-size: 4em;
+  margin-top: 3.7rem;
+  margin-left: 61rem;
+  margin-bottom: -9rem;
+}
+
+
+.MTitle{
+  color: #8C3C3F;
+  font-family: Charge Vector Black;
+  font-size: 4em;
+  margin-top: 5rem;
+  margin-left: 14rem;
+  margin-bottom: -9rem; 
+}
+
+.choosePic{
+  height: 33rem;
+  width: 40rem;
+  margin-left: 48rem;
+  margin-top: 13rem;
+  border-radius: 1.5rem;
+  box-shadow: rgba(0, 0, 0, 1) 0px 3px 8px;;
+}
+
+.chooseBg2{
+  height: 30rem;
+  width: 40rem;
+  margin-left: -45rem;
+  margin-top: -22rem;
+  margin-bottom: 20rem;
+}
+
+.chooseDesc{
+  text-align: right;
+  margin-right: 4rem;
+  font-size: 1.3em;
+  font-family: Poppins, sans-serif;
+  font-weight: bold;
+  margin-top: -25rem;
+}
+
+.chooseDesc2{
+  text-align: center;
+  font-size: 2.3em;
+  font-family: Arial Black;
+  font-weight: bolder;
+  margin-top: 1rem;
+}
+
+.chooseDesc3{
+  text-align: justify;
+  font-size: 1.5em;
+  font-family: Calibri;
+  margin-top: 2rem;
+  padding: 1rem;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.chooseDesc4{
+  text-align: center;
+  font-size: 1.3em;
+  font-family: Poppins, sans-serif;
+  margin-top: .5rem;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.chooseBg{
+  width: 45rem;
+  margin-top: 30rem;
+  margin-left: 46.2rem;
+  margin-bottom: -44rem;
+}
+
+.TeamSec1{
+  margin-top: 7rem;
+  margin-bottom: 15rem;
+}
+
+.Yorong{
+  width: 13rem;
+  margin-left: 4rem;
+}
+
+.Noriega{
+  width: 18.5rem;
+  margin-left: 7rem;
+  margin-right: -1rem;
+}
+
+.Natanauan{
+  width: 13rem;
+  margin-left: 8rem;
+  margin-right: -10rem;
+}
+
+.DelaCruz{
+  width: 13rem;
+  margin-left: 20.5rem;
+}
+
+.Name1{
+  color: black;
+  font-size: 1.2em;
+  font-family: Arial Black;
+  font-weight: bolder;
+  margin-top: -14rem;
+  margin-left: 2rem;
+}
+
+.Name2{
+  color: black;
+  font-size: 1.2em;
+  font-family: Arial Black;
+  font-weight: bolder;
+  margin-top: -1.8rem;
+  margin-left: 25rem;
+}
+
+.Name3{
+  color: black;
+  font-size: 1.2em;
+  font-family: Arial Black;
+  font-weight: bolder;
+  margin-top: -1.8rem;
+  margin-left: 49rem;
+}
+
+.Name4{
+  color: black;
+  font-size: 1.2em;
+  font-family: Arial Black;
+  font-weight: bolder;
+  margin-top: -1.8rem;
+  margin-left: 71rem;
+}
+
+.pos1{
+  font-weight: bold;
+  color: gray;
+  font-size: 1.1em;
+  font-family: Poppins, sans-serif;
+  margin-top: 1rem;
+  margin-left: -70rem;
+  text-align: center;
+}
+
+.pos2{
+  font-weight: bold;
+  color: gray;
+  font-size: 1.1em;
+  font-family: Poppins, sans-serif;
+  margin-top: -2.5rem;
+  margin-left: -22rem;
+  text-align: center;
+}
+
+.pos3{
+  font-weight: bold;
+  color: gray;
+  font-size: 1.1em;
+  font-family: Poppins, sans-serif;
+  margin-top: -1.3rem;
+  margin-left: 22.3rem;
+  text-align: center;
+}
+
+.pos4{
+  font-weight: bold;
+  color: gray;
+  font-size: 1.1em;
+  font-family: Poppins, sans-serif;
+  margin-top: -1.2rem;
+  margin-left: 70rem;
+  text-align: center;
+}
+
+.TeamSec2{
+  margin-top: 5rem;
+}
+
+.Abriam{
+  width: 13rem;
+  margin-left: 4rem;
+}
+
+.Altoveros{
+  width: 13rem;
+  margin-left: 10rem;
+  margin-right: -1rem;
+}
+
+.Auditor{
+  width: 14rem;
+  margin-left: 11rem;
+  margin-right: -10.8rem;
+}
+
+.Baylosis{
+  width: 13rem;
+  margin-left: 20.5rem;
+}
+
+.Name5{
+  color: black;
+  font-size: 1.2em;
+  font-family: Arial Black;
+  font-weight: bolder;
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+
+.Name6{
+  color: black;
+  font-size: 1.2em;
+  font-family: Arial Black;
+  font-weight: bolder;
+  margin-top: -1.5rem;
+  margin-left: 23.5rem;
+}
+
+.Name7{
+  color: black;
+  font-size: 1.2em;
+  font-family: Arial Black;
+  font-weight: bolder;
+  margin-top: -1.5rem;
+  margin-left: 51rem;
+}
+
+.Name8{
+  color: black;
+  font-size: 1.2em;
+  font-family: Arial Black;
+  font-weight: bolder;
+  margin-top: -1.7rem;
+  margin-left: 72rem;
+}
+
+.pos5{
+  font-weight: bold;
+  color: gray;
+  font-size: 1.1em;
+  font-family: Poppins, sans-serif;
+  margin-top: .5rem;
+  margin-left: -70rem;
+  text-align: center;
+}
+
+.pos6{
+  font-weight: bold;
+  color: gray;
+  font-size: 1.1em;
+  font-family: Poppins, sans-serif;
+  margin-top: -1rem;
+  margin-left: -22rem;
+  text-align: center;
+}
+
+.pos7{
+  font-weight: bold;
+  color: gray;
+  font-size: 1.1em;
+  font-family: Poppins, sans-serif;
+  margin-top: -1rem;
+  margin-left: 27rem;
+  text-align: center;
+}
+
+.pos8{
+  font-weight: bold;
+  color: gray;
+  font-size: 1.1em;
+  font-family: Poppins, sans-serif;
+  margin-top: -1.3rem;
+  margin-left: 71rem;
+  text-align: center;
+}
+
+.TeamSec3{
+  margin-top: 5rem;
+}
+
+.Solis{
+  width: 13rem;
+  margin-left: 25rem;
+}
+
+.Trinidad{
+  width: 13rem;
+  margin-left: 18rem;
+}
+
+.Name9{
+  color: black;
+  font-size: 1.2em;
+  font-family: Arial Black;
+  font-weight: bolder;
+  margin-top: 1.1rem;
+  margin-left: 24rem;
+}
+
+.Name10{
+  color: black;
+  font-size: 1.2em;
+  font-family: Arial Black;
+  font-weight: bolder;
+  margin-top: -1.7rem;
+  margin-left: 54rem;
+}
+
+.pos9{
+  font-weight: bold;
+  color: gray;
+  font-size: 1.1em;
+  font-family: Poppins, sans-serif;
+  margin-top: 1rem;
+  margin-left: -28rem;
+  text-align: center;
+}
+
+.pos10{
+  font-weight: bold;
+  color: gray;
+  font-size: 1.1em;
+  font-family: Poppins, sans-serif;
+  margin-top: -1.3rem;
+  margin-left: 34rem;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.Meet{
+  margin-top: 4rem;
+  color: #17245A;
+  font-size: 4em;
+  text-align: center;
+  letter-spacing: .3em;
+  font-weight: bolder;
+  font-family: charge vector black;
+  text-shadow: 2px 2px 4px mediumslateblue;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.MeetDesc{
+  margin-top: 2rem;
+  color: black;
+  font-size: 1.3em;
+  text-align: center;
+  letter-spacing: .1em;
+  font-family: Poppins, sans-serif;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.WeDo{
+  margin-top: 4rem;
+  color: lightcoral;
+  font-size: 4em;
+  text-align: center;
+  letter-spacing: .2em;
+  font-weight: bolder;
+  font-family: charge vector black;
+  text-shadow: 2px 2px 4px gray;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.WeDoDesc{
+  margin-top: 2rem;
+  color: black;
+  font-size: 1.3em;
+  text-align: center;
+  letter-spacing: .1em;
+  font-family: Poppins, sans-serif;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.ED{
+  height: 20rem;
+  width: 20rem;
+  margin-left: 6rem;
+  margin-top: 4rem;
+}
+
+.EDPic{
+  width: 8rem;
+  margin-left: 6rem;
+}
+
+.EPM{
+  height: 20rem;
+  width: 20rem;
+  margin-left: 36rem;
+  margin-top: -20rem;
+}
+
+.EPMPic{
+  width: 8.5rem;
+  margin-left: 5.8rem;
+}
+
+.EM{
+  height: 20rem;
+  width: 20rem;
+  margin-left:65rem;
+  margin-top: -20rem;
+}
+
+.EMPic{
+  width: 7.5rem;
+  margin-left: 6.5rem;
+}
+
+.EDTitle{
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 2em;
+  font-family: Arial Black;
+  font-weight: bolder;
+  color: #17245A;
+  text-shadow: 1px 1px 5px lightskyblue;
+}
+
+.EDDesc{
+  margin-top: 1rem;
+  text-align: center;
+  font-family: Poppins, sans-serif;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: darkslategray;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.EPMTitle{
+  margin-top: .5rem;
+  text-align: center;
+  font-size: 2em;
+  font-family: Arial Black;
+  font-weight: bolder;
+  color: #17245A;
+  text-shadow: 1px 1px 5px lightskyblue;
+}
+
+.EPMDesc{
+  margin-top: 1rem;
+  text-align: center;
+  font-family: Poppins, sans-serif;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: darkslategray;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.EMTitle{
+  margin-top: 1.4rem;
+  text-align: center;
+  font-size: 2em;
+  font-family: Arial Black;
+  font-weight: bolder;
+  color: #17245A;
+  text-shadow: 1px 1px 5px lightskyblue;
+}
+
+.EMDesc{
+  margin-top: 1rem;
+  text-align: center;
+  font-family: Poppins, sans-serif;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: darkslategray;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+
+.Reserve{
+  height: 33rem;
+  width: 93.2rem;
+  background-color: #E5FFFD;
+  margin-top: 9rem;
+  margin-left: -1rem;
+  margin-bottom: -5rem;
+}
+
+.plan{
+  text-align: center;
+  color: black;
+  padding-top: 5rem;
+  font-size: 1.5em;
+  font-weight: bold;
+  font-family: Poppins, sans-serif;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.work{
+  text-align: center;
+  color: black;
+  padding-top: 3rem;
+  font-size: 2.4em;
+  font-weight: bold;
+  font-family: Arial Black;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.rsvp{
+  text-align: center;
+  color: black;
+  padding-top: 2rem;
+  font-size: 1.2em;
+  font-weight: bold;
+  font-family: Poppins, sans-serif;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.ReserveBtn{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background: white;
+  font-family: "Montserrat", sans-serif;
+  box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  border: none;
+  margin-left: 39rem;
+  margin-top: 2rem;
+}
+
+button.ReserveBtn:after{
+  content: " ";
+  width: 0%;
+  height: 100%;
+  background: #8C3C3F;
+  position: absolute;
+  transition: all 0.4s ease-in-out;
+  right: 0;
+}
+
+button.ReserveBtn:hover::after{
+  right: auto;
+  left: 0;
+  width: 100%;
+}
+
+button span{
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  padding: 18px 25px;
+  color: black;
+  font-size: 1.125em;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  z-index: 20;
+  transition: all 0.3s ease-in-out;
+}
+
+button.ReserveBtn:hover span {
+  color: white;
+  animation: scaleUp 0.3s ease-in-out;
+}
+
+@keyframes scaleUp{
+ 0%{
+  transform: scale(1);
+ }
+
+ 50%{
+  transform: scale(0.95);
+ }
+
+ 100%{
+  transform: scale(1);
+ }
+}
+
+.resBtn{
+  text-decoration: none;
+  color: black;
+}
+
+.profile{
+  width: 2rem;
+  height: 2rem;
+}
+
+.AboutUs{
+  color: #EE7863;
+}
+
+
+

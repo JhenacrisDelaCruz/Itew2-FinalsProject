@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styleadmin.css">
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="adminscript.js"></script>
+</head>
+
+<body>
+  <div id="container">
+    <fieldset class="fd1">
+      <img src="https://icons.veryicon.com/png/o/object/material-design-icons-1/account-settings-variant.png" >
+      <h1> WELCOME, ADMIN! </h1>
+    </fieldset>
+
+    <fieldset class="fd1">
+      <li onclick="window.location.href='Dashboard.html';"> DASHBOARD </li>  
+      <li onclick="window.location.href='BookingAdmin.html';"> BOOKINGS </li>  
+      <li onclick="window.location.href='EventDetails.html';"> EVENT DETAILS </li>    
+      <li onclick="window.location.href='VenueDetails.html';"> VENUE DETAILS </li>
+      <li onclick="window.location.href='ClientDetails.html';"> CLIENT DETAILS </li>
+      <li onclick="window.location.href='FrontPage.html';"> LOG OUT </li>
+    </fieldset>
+
+    <div class="innercon">
+      <fieldset class="fd2">
+        <h2 class = "dashTitle"> DASHBOARD </h2>
+        <p class = "pending"> PENDING: <span id = "pendingNum"> 0 </span></p>
+
+        <p id = "ttlBooking" class = "ttlBooking"> TOTAL BOOKINGS </p>
+        <div  id= "bgBooking"> 0 </div>   
+
+        <p id = "ttlClient">  TOTAL CLIENTS </p>
+        <div  id= "bgClient"> 0 </div> 
+
+        <p id = "ttlApproved"> TOTAL APPROVED BOOKINGS </p>
+        <div  id= "bgApproved"> 0 </div>
+        <p id = "ttlReject" > TOTAL REJECTED BOOKINGS </p>
+        <div  id= "bgReject"> 0 </div>
+      </fieldset>
+
+    </div>
+  </div>
+</body>
+</html>

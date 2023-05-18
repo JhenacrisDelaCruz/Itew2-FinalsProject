@@ -1,0 +1,64 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="styleadmin.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="adminscript.js"></script>
+  </head>
+  <body>
+    <div id="container">
+      <fieldset class="fd1">
+        <img src="https://icons.veryicon.com/png/o/object/material-design-icons-1/account-settings-variant.png" >
+        <h1> WELCOME, ADMIN! </h1> 
+      </fieldset>
+    
+      <fieldset class="fd1">      
+        <li onclick="window.location.href='Dashboard.html';"> DASHBOARD </li>   
+        <li onclick="window.location.href='BookingAdmin.html';"> BOOKINGS </li>  
+        <li onclick="window.location.href='EventDetails.html';"> EVENT DETAILS </li>    
+        <li onclick="window.location.href='VenueDetails.html';"> VENUE DETAILS </li>
+        <li onclick="window.location.href='ClientDetails.html';"> CLIENT DETAILS </li>
+        <li onclick="window.location.href='FrontPage.html';"> LOG OUT </li>
+      </fieldset>
+           
+    <div class="innercon">
+      <fieldset class="fd2">
+        <h2 class = "bookingTitle"> BOOKINGS </h2>
+        <fieldset id = "fdSearch">
+          <legend> SEARCH </legend>
+
+          <p class= "txtID">Search :<input type="text" id="tfbookSearch" placeholder="Search in table"></p>
+          <button class = "bookingUpdate" id ="bookingUpdate"> UPDATE </button>
+          <button class = "bookingSave" id ="bookingSave"> SAVE </button>
+          <button class = "bookingCancel" id = "bookingCancel"> CANCEL </button>
+        </fieldset> 
+
+        <fieldset id = "fdSummaryBooking">
+          <legend> SUMMARY BOOKINGS </legend>
+          <div class="scrollable" >
+            <table id="bookingTable" border="1" style = "width: 140%;">
+              <tr>
+                <th>Transaction ID</th>
+                <th>Status</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th> Event Type </th>
+                <th> Venue </th> 
+                <th> Theme </th> 
+                <th>Event Date</th>
+                <th>Event Time</th>
+                <th> No. of Attendees </th> 
+                <th> Services </th> 
+                <th> Add-ons </th> 
+                <th> Additional Messages </th>
+              </tr>
+              <tbody class="tbody" id = "tbody"></tbody>
+            </table>
+          </div>
+        </fieldset>
+        
+      </fieldset>
+     </div>
+    </div>
+  </body>
+</html>

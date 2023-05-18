@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styleadmin.css">
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src = "adminscript.js"></script>
+</head>
+<body>
+
+  <div id="container">
+    <fieldset class="fd1">
+      <img src="https://icons.veryicon.com/png/o/object/material-design-icons-1/account-settings-variant.png" >
+      <h1> WELCOME, ADMIN! </h1> 
+    </fieldset>
+
+    <fieldset class="fd1">
+      <li onclick="window.location.href='Dashboard.html';"> DASHBOARD </li>
+      <li onclick="window.location.href='BookingAdmin.html';"> BOOKINGS </li>  
+      <li onclick="window.location.href='EventDetails.html';"> EVENT DETAILS </li>    
+      <li onclick="window.location.href='VenueDetails.html';"> VENUE DETAILS </li>
+      <li onclick="window.location.href='ClientDetails.html';"> CLIENT DETAILS </li>
+      <li onclick="window.location.href='FrontPage.html';"> LOG OUT </li>
+    </fieldset>
+
+
+    <div class="innercon">
+      <fieldset class="fd2">
+        <h2 class = "clientTitle"> CLIENT DETAILS </h2>
+        <fieldset id = "fdSearch2">
+          <legend> SEARCH </legend>
+          <p class= "tfName"> Name :<input type="text" id="tfSearch2" placeholder="Enter a Name"></p>
+          <button id="btnFind2"> FIND </button>
+          <button id="btnClear3"> CLEAR </button>
+        </fieldset>
+
+        <fieldset id = "fdClientDetails">
+          <legend> CLIENT DETAILS </legend>
+          <div class="scrollable">
+            <table border="1" id = "clientInfo">
+              <tr>
+                <th>NAME</th>
+                <th>EMAIL</th>
+                <th>PASSWORD</th>
+              </tr>
+            </table>
+          </div>
+        </fieldset>
+
+      </fieldset>
+    </div>
+  </div>
+</body>
+</html>
